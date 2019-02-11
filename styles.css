@@ -1,0 +1,263 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+
+.grid{
+    display: grid;
+    grid-template-areas:
+    "header"                                          "main"
+    "footer";
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, minmax(100px, auto));
+}
+
+header {
+    grid-area: header;
+    background-image: url('./d-N-105-psdNotify/banner.png');
+    background-size: cover;
+    background-position: center;
+    border-top: 5px solid green;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    color: white
+}
+
+nav{
+    flex-direction: column;
+  
+
+}
+
+nav h1{
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.texto1{
+    margin: 0 0 0 0;
+}
+.texto2{
+    margin: 2px 0 30px 0;
+    
+}
+
+#icone { 
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    
+}
+
+#icone a{
+    background-color: rgba(0, 0, 0, 0.178);
+    border-radius: 100%;
+    padding: 10px;
+    transition: 1s;
+    
+
+}
+
+#icone a:hover{
+    background-color: green;
+}
+
+.mao{
+    align-self: flex-end;
+    height: 40vw;
+    margin-left: 20px;
+}
+nav{
+    width: 500px;
+}
+
+header nav h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 30pt;
+    
+}
+
+span{
+    color: green;
+    font-family: 'Pacifico', cursive;
+}
+
+main{
+    grid-area: main;
+}
+
+.icone{
+    height: 20vw;
+    align-items: center;
+    padding: 0 20%;
+    }
+
+    .icone div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
+    }
+
+    .icone div p{
+        text-align: center;
+        font-size: 10pt;
+        color: gray;
+        margin: 0;
+    }
+
+.icone div img{ 
+    background-color: green;
+    border: 2px solid green;
+    border-radius: 50%;
+    padding: 10px;
+    justify-content: center;
+    
+}
+
+
+section{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+
+#email{
+    background-color: lightgray;
+    display: flex;
+    height: 20vw;
+   
+
+}
+
+
+#divdoemail{
+    flex-direction: column;
+    margin: 0 0 0 280px;
+    
+}
+
+
+#divdoemail p{
+    color: gray;
+    font-size: 10pt;
+   
+}
+
+.botao {
+    border: 0.5px solid white;
+    border-radius: 10%;
+    height: 2.5vw;
+    width: 17vw;
+    
+}
+
+#botao1 {
+    background-color: green;
+    border-radius: 10%;
+    border: 0.5px solid green;
+    color: white;
+    font-weight: bold;
+    width: 7vw;
+}
+
+.video iframe{ 
+    margin: 0 200px 0 0;
+}
+
+.section3 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2% 20%;
+}
+
+.section3 p {
+    font-size: 12px;
+    color: grey;
+    margin: 2% 20%;
+
+}
+
+
+.section3 div a img {
+    /* ARRUMAR ESSES MALDITOS
+    COLOCAR HOVER
+    background-color:  green;
+    border: 2px solid green; */
+    
+    
+    border-radius: 50%;
+    padding: 10px;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+    align-content: space-around;
+    background-color: lightgrey;
+    height: 70px;
+
+}
+
+footer div a{
+    
+margin: 0 10px;
+color: gray;
+}
+
+/*Breakpoint para celular */
+@media(min-width: 576px max-width: 767px){
+    .mao{
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+    }
+}
+
+/*Breakpoint para tablet */
+@media(min-width: 768px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/*Breakpoint para notebooks grandes e desktops */
+
+@media(min-width: 1200px){
+    header{
+        flex-direction: row;
+    }
+    
+    .titulo {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      
+    main{
+    /* margin: auto Centraliza o elemento*/
+    margin: auto;
+    /* maximo de largura apresentado na tela do computador*/
+    max-width: 1200px;
+    }
+     
